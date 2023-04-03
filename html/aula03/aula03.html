@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>template site</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            margin: 3px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 0.6fr 1fr;
+        }
+
+        #header {
+            background-color: blueviolet;
+            height: 60px;
+            grid-column: 1 / span 2;
+        }
+
+        #header h1 {
+            text-align: center;
+            line-height: 50px;
+        }
+
+        #menu {
+            background-color: aquamarine;
+            grid-row: 2 / span 3;
+        }
+
+        #menu ul {
+            margin-left: 16px;
+        }
+
+        .post {
+            background-color: burlywood;
+        }
+
+        table,
+        td,
+        th {
+            border: 1px solid white;
+            border-collapse: collapse;
+        }
+
+        form input {
+            display: block;
+        }
+
+        #footer {
+            background-color: plum;
+            height: 60px;
+            grid-column: 1 / span 2;
+            text-align: center;
+            line-height: 60px;
+
+        }
+
+        #footer a {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="header">
+            <h1>Veja as os dados Abaixo</h1>
+        </div>
+        <div id="menu">
+            <ul>
+                <li>Café</li>
+                <li>Vs Code</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JS</li>
+            </ul>
+        </div>
+        <div class="post">
+            <table>
+
+                <tr>
+                    <th>Dado 1</th>
+                    <th>Dado 2</th>
+                    <th>Dado 3</th>
+                </tr>
+                <tr>
+                    <td>Dado do dado 1</td>
+                    <td>Dado do dado 2</td>
+                    <td>Dado do dado 3</td>
+                </tr>
+                <tr>
+                    <td>Dado do dado 1</td>
+                    <td>Dado do dado 2</td>
+                    <td>Dado do dado 3</td>
+                </tr>
+                <tr>
+                    <td>Dado do dado 1</td>
+                    <td>Dado do dado 2</td>
+                    <td>Dado do dado 3</td>
+                </tr>
+
+            </table>
+        </div>
+        <div class="post">
+            <form action="">
+                <input type="text" name="nome" id="" placeholder="Digite seu nome">
+                <textarea name="" id="" cols="30" rows="5" placeholder="Deixe uma mensagem pra gente!!!"></textarea>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+        <div id="footer">
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">HTML: Linguagem de Marcação de Hipertexto</a>
+        </div>
+    </div>
+</body>
+
+</html>
