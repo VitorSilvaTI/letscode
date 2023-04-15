@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 0.75rem;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+:root {
+    --main-color: #1c1a1d;
+    --font-size-default: 0.75rem;
+    --color-text: #ffffff;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--main-color);
+    padding: 0 0.84rem;
+    align-items: center;
+    height: 4.17rem;
+}
+
+.name-logo,
+.menu {
+    color: var(--color-text);
+}
+
+.name-logo {
+    font-size: 1.25rem;
+}
+
+.menu-list {
+    list-style: none;
+}
+
+.menu-list li {
+    display: inline-block;
+}
+
+.menu-list a {
+    color: var(--color-text);
+    text-decoration: none;
+    font-size: 1.25rem;
+    padding: 0.416rem;
+}
+
+a.selected {
+    background-color: var(--color-text);
+    color: var(--main-color);
+    border-radius: 0.416rem;
+}

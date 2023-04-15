@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .image-container {
+            background-image: url('teste2.jpeg');
+            background-repeat: no-repeat;
+            height: 520px;
+            width: 320px;
+            margin: 15px;
+        }
+
+        .title,
+        .subtitle {
+            font-family: 'Great Vibes', cursive;
+        }
+
+        .title {
+            font-size: 35px;
+            text-align: center;
+            padding-top: 3rem;
+            transform: rotate(-8deg);
+            color: #603918;
+        }
+
+        .subtitle {
+            color: #4D3C20;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #E3CF9C;
+            text-align: center;
+        }
+
+        .list-container {
+            display: flex;
+            justify-content: space-around;
+            padding-top: 1rem;
+        }
+
+        .fruit-list,
+        .vegetables-list {
+            font-family: 'Roboto', sans-serif;
+            color: #766B4B;
+            text-transform: uppercase;
+            font-size: 13px;
+            list-style: none;
+            padding-top: 10px;
+        }
+
+        .fruit-list li::before,
+        .vegetables-list li::before {
+            content: "\25A0";
+            display: inline-block;
+            width: 10px;
+            height: 16px;
+            margin-right: 5px;
+            color: #FAB047;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="image-container">
+        <h1 class="title">É dia de feira!</h1>
+        <div class="list-container">
+            <section class="fruits-list-container">
+                <h2 class="subtitle">frutas</h2>
+                <ul class="fruit-list">
+                    <li>Abacate</li>
+                    <li>Abacaxi</li>
+                    <li>Ameixa</li>
+                    <li>Banana</li>
+                    <li>Goiaba</li>
+                    <li>Laranja</li>
+                    <li>Limão</li>
+                    <li>Maçã</li>
+                    <li>Mamão</li>
+                    <li>Manga</li>
+                    <li>Melancia</li>
+                    <li>Maracujá</li>
+                    <li>Melão</li>
+                    <li>Morango</li>
+                    <li>Pêra</li>
+                    <li>Pêssego</li>
+                    <li>Uva</li>
+                </ul>
+            </section>
+            <section>
+                <h2 class="subtitle">legumes e veduras</h2>
+                <ul class="vegetables-list">
+                    <li>Alface</li>
+                    <li>Alho</li>
+                    <li>Batata</li>
+                    <li>Berinjela</li>
+                    <li>Beterraba</li>
+                    <li>Brócolis</li>
+                    <li>Cebola</li>
+                    <li>Cenoura</li>
+                    <li>Couve</li>
+                    <li>Chuchu</li>
+                    <li>Espinafre</li>
+                    <li>Mandioca</li>
+                    <li>Milho</li>
+                    <li>Pepino</li>
+                    <li>Pimentão</li>
+                    <li>Rúcula</li>
+                    <li>Tomate</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>
